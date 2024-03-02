@@ -1,14 +1,15 @@
-/** @type {import('tailwindcss').Config} */
 const withMT = require("@material-tailwind/react/utils/withMT");
+ 
 module.exports = withMT({
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily
+      fontFamily:{
+        russoOne :["Russo One"],
+        inter:["Inter"],
+        petit:["Petit Formal Script"]
+      }
     },
   },
   plugins: [],
-})
-
+});
